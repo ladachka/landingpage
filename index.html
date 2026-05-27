@@ -48,7 +48,21 @@
       font-size: 36px;
       letter-spacing: -0.01em;
       color: #111;
+      margin-bottom: 16px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
       margin-bottom: 40px;
+    }
+
+    .contact p {
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      color: #888;
     }
 
     /* ── Photo placeholder ── */
@@ -80,7 +94,7 @@
       display: block;
       width: 100%;
       padding: 16px 24px;
-      background: #5b6684;
+      background: #7c5c72;
       color: #fff;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
@@ -122,20 +136,20 @@
     <p class="subtitle">Interaction Designer</p>
     <h1>Lada Tatarkina</h1>
 
-    <!-- Replace the src with your actual photo URL, or remove the <img> to keep the grey placeholder -->
+    <div class="contact">
+      <p>ladatatarkina@gmail.com</p>
+      <p>+46 79-355 42 58</p>
+      <p>Malmö</p>
+    </div>
+
     <div class="photo">
       <img src="IMG_5020.jpg" alt="Lada Tatarkina" />
     </div>
 
     <div class="buttons">
-      <!-- Paste your Portfolio PDF link in href -->
-      <a class="btn" href="Lada_Tatarkina_Portfolio.pdf" target="_blank" rel="noopener">Download Portfolio</a>
-
-      <!-- Paste your CV PDF link in href -->
-      <a class="btn" href="Lada_Tatarkina_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-
-      <!-- Paste your LinkedIn URL in href -->
-     <a class="btn" href="https://www.linkedin.com/in/lada-tatarkina-447020209" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="Lada_Tatarkina_Portfolio.pdf" target="_blank" rel="noopener">View Portfolio</a>
+      <a class="btn" href="Lada_Tatarkina_CV.pdf" target="_blank" rel="noopener">View CV</a>
+      <a class="btn" href="https://www.linkedin.com/in/lada-tatarkina-447020209" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </body>
