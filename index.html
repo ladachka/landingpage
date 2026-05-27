@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lada Tatarkina — Interaction Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      background: #ffffff;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 64px 24px;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 36px;
+      letter-spacing: -0.01em;
+      color: #111;
+      margin-bottom: 40px;
+    }
+
+    /* ── Photo placeholder ── */
+    .photo {
+      width: 200px;
+      height: 200px;
+      background: #d0d0d0;
+      margin-bottom: 48px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ── Buttons ── */
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px 24px;
+      background: #5b6684;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn:hover {
+      background: #4a5570;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    @media (min-width: 600px) {
+      .card {
+        padding: 80px 60px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .photo {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <p class="subtitle">Interaction Designer</p>
+    <h1>Lada Tatarkina</h1>
+
+    <!-- Replace the src with your actual photo URL, or remove the <img> to keep the grey placeholder -->
+    <div class="photo">
+      <img src="IMG_5020.jpg" alt="Lada Tatarkina" />
+    </div>
+
+    <div class="buttons">
+      <!-- Paste your Portfolio PDF link in href -->
+      <a class="btn" href="Lada_Tatarkina_Portfolio.pdf" target="_blank" rel="noopener">Download Portfolio</a>
+
+      <!-- Paste your CV PDF link in href -->
+      <a class="btn" href="Lada_Tatarkina_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+
+      <!-- Paste your LinkedIn URL in href -->
+     <a class="btn" href="https://www.linkedin.com/in/lada-tatarkina-447020209" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</body>
+</html>
